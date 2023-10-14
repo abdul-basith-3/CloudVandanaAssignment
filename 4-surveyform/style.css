@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    background-color: rgb(33, 130, 228);
+    text-align: center;
+}
+.flex-container{
+    display: flex;
+    margin-bottom: 20px;
+}
+#form{
+    max-width: 450px;
+    background-color: white;
+    margin: 50px auto;
+    padding:30px 15px;
+    
+}
+.form-control1{
+    display: inline-block;
+    text-align: left;
+    margin-right: 100px;
+}
+.form-control2{
+    display: inline-block;
+    text-align: left;
+    margin-right: 0px;
+}
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+}
+#name,#email{
+    height: 25px;
+}
+#suggestion{
+    height: 100px;
+    width: 425px;
+}
+label{
+    margin-bottom: 30px;
+}
+input{
+    margin-top: 10px;
+}
+#submitButton ,#resetButton {
+    background-color: #2b9fdd; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    font-size: 16px;
+  }
+  

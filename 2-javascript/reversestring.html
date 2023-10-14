@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My JavaScript Page</title>
+</head>
+<body>
+  <script>
+    function reverse(str, start, end)
+{
+    let temp;        
+         
+    while (start <= end) 
+    {
+        temp = str[start];
+        str[start] = str[end];
+        str[end] = temp;
+        start++;
+        end--;
+    }
+}
+
+function reversewords(x)
+{
+    x = x.split("");
+    let start = 0;
+    for (let end = 0; 
+             end < x.length; end++) 
+    {
+        if (x[end] == ' ') 
+        {
+            reverse(x, start, end);
+            start = end + 1;
+        }
+    }
+    reverse(x, start, x.length - 1);
+    return x.join("");
+}
+var x = prompt("enter the string: ")   
+console.log(reversewords(x));
+  </script>
+</body>
+</html>

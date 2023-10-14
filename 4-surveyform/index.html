@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Customer Survey Form</h1>
+    <form id="form">
+        <div class="flex-container">
+            <div class="form-control1">
+                <label for="name" class="label-name">Name</label><br>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-control2">
+                <label for="email" class="label-email">Email</label><br>
+                <input type="text" id="email" required>
+            </div>
+        </div>
+        <div class="form-control">
+            <label for="first-time">Is this first time You are using our product & service</label>
+            <br>
+            <input type="radio" name="first-time" id="" value="yes" required>yes</input>
+            <input type="radio" name="first-time" id="" value="no" required>no</input>
+        </div>
+        <div class="form-control">
+            <label for="">would you suggestion to your freinds and colleague</label>
+            <br>
+            <input type="radio" name="needsuggestion" id="" value="yes" required>yes</input>
+            <input type="radio" name="needsuggestion" id="" value="no" required>no</input>
+        </div>
+        <div class="form-control">
+            <label for="">How Satisfied are you with our company overall</label>
+            <br>
+            <input type="radio" name="satisfaction" id="Satisfied" value="Satisfied" required>Satisfied</input>
+            <input type="radio" name="satisfaction" id="Undecided" value="Undecided" required>Undecided</input>
+            <input type="radio" name="satisfaction" id="UnSatisfied" value="UnSatisfied" required>UnSatisfied</input>
+        </div>
+            <label for="suggestiontext" class="label-suggestion">Do you have suggestion to improve our service?</label><br>
+            <input type="text" id="suggestion" required>
+        <button type="submit" id="submitButton" onclick="submitform()">Submit</button>
+        <button type="button" id="resetButton" onclick="resetform()">Reset</button>
+    </form>
+    <div id="popup" style="display: none;">
+        <h2>Survey Response</h2>
+        <div id="response"></div>
+        <button onclick="closePopup()">Close</button>
+      </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>

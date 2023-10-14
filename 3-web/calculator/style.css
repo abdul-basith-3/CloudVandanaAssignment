@@ -1,0 +1,48 @@
+.container{
+    width: 400px;
+    height: 500px;
+    margin: auto;
+
+}
+#screen{
+    width: 296px ;
+    height: 80px;
+    font-size: 3rem;
+    color: black;
+    text-align:right;
+    outline: none;
+
+} 
+.ac{
+    
+    width: 100px; 
+    height: 80px;
+    background-color:rgb(9, 158, 133);
+    font-size: 1rem;
+
+}
+input{
+    border: none;
+    margin: -2px;
+    margin-top: 0px;
+    color: white;
+}
+.button{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(120, 124, 124);
+    font-size: 1rem;
+
+}
+.number{
+    background-color: black;
+}
+.button:hover{
+    border: 4px solid goldenrod;
+}
+.ac:hover{
+    border: 4px solid goldenrod;
+}
+h1{
+    text-align: center;
+}

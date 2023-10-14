@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+   function Sort(ar) {
+    var done = false;
+    while (!done) {
+      done = true;
+      for (var i = 1; i < ar.length; i += 1) {
+        if (ar[i - 1] < ar[i]) {
+          done = false;
+          var tmp = ar[i - 1];
+          ar[i - 1] = ar[i];
+          ar[i] = tmp;
+        }
+      }
+    }
+
+    return ar;
+  }
+
+  var numbers = [12, 10, 15, 11, 14, 13, 16];
+  Sort(numbers);
+  console.log(numbers);
+</script>
+</body>
+</html> 
