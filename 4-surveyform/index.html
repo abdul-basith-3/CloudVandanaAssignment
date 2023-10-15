@@ -41,16 +41,33 @@
             <input type="radio" name="satisfaction" id="Undecided" value="Undecided" required>Undecided</input>
             <input type="radio" name="satisfaction" id="UnSatisfied" value="UnSatisfied" required>UnSatisfied</input>
         </div>
+        <div class="form-control">
             <label for="suggestiontext" class="label-suggestion">Do you have suggestion to improve our service?</label><br>
-            <input type="text" id="suggestion" required>
-        <button type="submit" id="submitButton" onclick="submitform()">Submit</button>
+            <textarea id="suggestion" required></textarea>
+        </div>
+            
+        <button type="submit" id="submitButton" onclick="submitform();return false">Submit</button>
         <button type="button" id="resetButton" onclick="resetform()">Reset</button>
+        <div id="popup" style="display: none;">
+            <h2>Survey Response</h2>
+            <div id="response">
+                Name :<span id="rname"> </span>
+                <br>
+                Email :<span id="remail"> </span>
+                <br>
+                Is this first time You are using our product & service :<span id="rtime"> </span>
+                <br>
+                would you suggestion to your freinds and colleague :<span id="rneedsuggestion"> </span>
+                <br>
+                How Satisfied are you with our company overall : <span id="rsatisfaction"> </span>
+                <br>
+                Do you have suggestion to improve our service? : <br><textarea id="rsuggestion"> </textarea>
+                <br>
+            </div>
+            <br>
+            <button onclick="closePopup()">Close</button>
+          </div>
     </form>
-    <div id="popup" style="display: none;">
-        <h2>Survey Response</h2>
-        <div id="response"></div>
-        <button onclick="closePopup()">Close</button>
-      </div>
     <script src="/script.js"></script>
 </body>
 

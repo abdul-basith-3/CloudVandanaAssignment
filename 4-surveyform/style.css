@@ -3,6 +3,9 @@ body{
     background-color: rgb(33, 130, 228);
     text-align: center;
 }
+h1{
+    color: #fff;
+}
 .flex-container{
     display: flex;
     margin-bottom: 20px;
@@ -48,4 +51,16 @@ input{
     padding: 10px 32px;
     font-size: 16px;
   }
-  
+#popup{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: #fff;
+    position:absolute;
+    transform: translate(-5%,-100%);
+    display: flex;
+  }
+#rsuggestion{
+    width: 450px;
+    height: 100px;
+}
